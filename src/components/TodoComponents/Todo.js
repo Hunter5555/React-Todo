@@ -8,12 +8,12 @@ const Todo = props => {
                 <Item
                 key={item.id}
                 item={item}
-                togglePurchased={props.togglePurchased}
+                toggleList={props.toggleList}
                 />
             ))}
             <button className="clear-btn" onClick=
-            {props.clearPurchased}>
-                Clear Purchased
+            {props.clearList}>
+                Clear List
             </button>
         </div>
     );
