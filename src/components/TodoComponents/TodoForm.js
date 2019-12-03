@@ -2,12 +2,12 @@ import React from "react";
 
 const TodoForm = props => {
   let verboseClassName = "item";
-  if (props.item.purchased) {
-    verboseClassName = verboseClassName + " purchased";
+  if (props.item.list) {
+    verboseClassName = verboseClassName + " list";
   }
 
   const handleClick = () => {
-    props.togglePurchased(props.item.id);
+    props.toggleList(props.item.id);
   };
 
   return (
